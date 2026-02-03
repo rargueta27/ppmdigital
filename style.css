@@ -24,38 +24,31 @@ footer {
   margin-top: 60px;
 }
 
+footer {
+  background-color: #111827; /* Deep Navy/Black */
+  color: #ffffff;           /* Pure White Text */
+  padding: 40px 0;          /* More breathing room */
+  margin-top: 60px;
+  text-align: center;
+}
+
 footer a {
-  color: #9ca3af;
+  color: #9ca3af;           /* Soft gray for links */
   text-decoration: none;
   margin: 0 10px;
+  transition: 0.3s;         /* Makes the hover look smooth */
 }
 
 footer a:hover {
-  color: #ffffff;
-}
-
-.footer-content {
-  text-align: center;
-  font-size: 14px;
-}
-
-/* Footer Text Color Fix */
-.site-footer {
-    color: #333333; /* Dark gray for better readability */
-}
-
-.site-footer a {
-    color: #0056b3; /* Professional blue for links */
-    text-decoration: none;
-}
-
-.site-footer a:hover {
-    text-decoration: underline;
-    color: #003d7a; /* Darker blue when hovering */
+  color: #ffffff;           /* Links turn white when you touch them */
+  text-decoration: underline;
 }
 
 .copyright {
-    font-size: 0.9rem;
-    margin-bottom: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  opacity: 0.9;             /* Slightly softer than pure white */
 }
+
+
 
