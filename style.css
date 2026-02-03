@@ -23,25 +23,22 @@ footer {
   padding: 20px 0;
   margin-top: 60px;
 }
-
 footer {
-  background-color: #111827; /* Deep Navy/Black */
-  color: #ffffff;           /* Pure White Text */
-  padding: 40px 0;          /* More breathing room */
+  background-color: #111827 !important; /* Forces the dark background */
+  color: #ffffff !important;           /* Forces white text */
+  padding: 40px 0;
   margin-top: 60px;
   text-align: center;
 }
 
 footer a {
-  color: #9ca3af;           /* Soft gray for links */
+  color: #9ca3af !important;           /* Light gray links */
   text-decoration: none;
   margin: 0 10px;
-  transition: 0.3s;         /* Makes the hover look smooth */
 }
 
 footer a:hover {
-  color: #ffffff;           /* Links turn white when you touch them */
-  text-decoration: underline;
+  color: #ffffff !important;           /* Links turn white on hover */
 }
 
 .copyright {
@@ -49,6 +46,7 @@ footer a:hover {
   margin-bottom: 10px;
   opacity: 0.9;             /* Slightly softer than pure white */
 }
+
 
 
 
