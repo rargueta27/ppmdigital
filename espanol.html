@@ -14,7 +14,32 @@
         .btn-primary { background-color: #ff4b2b; border: none; padding: 12px 30px; font-weight: bold; }
         .btn-primary:hover { background-color: #ff416c; }
         .contact-section { background-color: #f8f9fa; padding: 80px 0; }
-        footer { background: #222; color: white; padding: 20px 0; }
+       footer { 
+    background-color: #0f172a !important; 
+    color: #ffffff !important; 
+    padding: 50px 0; 
+    text-align: center;
+}
+
+footer a {
+    color: #9ca3af !important; 
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff !important; 
+    text-decoration: underline;
+}
+
+.full-copyright {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #64748b !important; /* Slightly dimmer gray for the legal line */
+}
         .lang-btn { font-weight: bold; color: #fdbb2d !important; border: 1px solid #fdbb2d; border-radius: 5px; }
     </style>
 </head>
@@ -92,12 +117,20 @@
         </div>
     </section>
 
-    <footer class="text-center">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 Prime Presence Marketing. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <footer>
+    <div class="container">
+        <p class="mb-0">
+            &copy; 2026 <strong>PPM Digital</strong> | 
+            <a href="privacy.html">Privacy</a> | 
+            <a href="terms.html">Terms</a> | 
+            <a href="contact.html">Contact</a>
+        </p>
+        <span class="full-copyright">
+            &copy; 2026 Prime Presence Marketing Digital (PPMDIGITAL) — All Rights Reserved.
+        </span>
+    </div>
+</footer>
+    
 </body>
+
 </html>
