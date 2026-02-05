@@ -12,9 +12,9 @@
   <h1>Payments</h1>
   <p>Complete your payment securely using Stripe.</p>
 
-  <button id="checkout-button">
-    Pay Securely
-  </button>
+  <button id="checkout-button" class="btn btn-primary" style="background-color: #1a2a6c; border: none; padding: 12px 40px; border-radius: 50px; font-weight: bold;">
+  Pay Securely
+</button>
 
   <p style="margin-top:20px; font-size:14px;">
     Payments are processed securely by Stripe. We do not store your payment information.
@@ -29,20 +29,15 @@
     <a href="contact.html">Contact</a>
   </div>
 </footer>
-
 <script>
-  const stripe = Stripe("pk_test_YOUR_PUBLIC_KEY_HERE");
-
-  document
-    .getElementById("checkout-button")
-    .addEventListener("click", () => {
-      fetch("/create-checkout-session", {
-        method: "POST",
-      })
-      .then(res => res.json())
-      .then(data => stripe.redirectToCheckout({ sessionId: data.id }));
-    });
+  // No need for 'const stripe = Stripe(...)' for this method!
+  
+  document.getElementById("checkout-button").addEventListener("click", () => {
+    // Replace the URL below with the one you copied from Stripe
+    window.location.href = " https://buy.stripe.com/5kQ8wPacL6Cr28Z5JP0x200 ";
+  });
 </script>
 
 </body>
 </html>
+
