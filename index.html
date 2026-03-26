@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPM Digital | SEO, Jingles & Development</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        
         body { font-family: 'Inter', sans-serif; color: #333; }
         .hero { background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); color: white; padding: 100px 0; }
         .service-card { border: none; transition: transform 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
@@ -15,66 +14,76 @@
         .btn-primary { background-color: #ff4b2b; border: none; padding: 12px 30px; font-weight: bold; }
         .btn-primary:hover { background-color: #ff416c; }
         .contact-section { background-color: #f8f9fa; padding: 80px 0; }
-       footer { 
-    background-color: #0f172a !important; 
-    color: #ffffff !important; 
-    padding: 50px 0; 
-    text-align: center;
-}
+        
+        /* Navbar fixes */
+        .nav-logo { max-height: 50px; width: auto; }
+        
+        footer { 
+            background-color: #0f172a !important; 
+            color: #ffffff !important; 
+            padding: 50px 0; 
+            text-align: center;
+        }
 
-footer a {
-    color: #9ca3af !important; 
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
+        footer a {
+            color: #9ca3af !important; 
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
 
-footer a:hover {
-    color: #ffffff !important; 
-    text-decoration: underline;
-}
+        footer a:hover {
+            color: #ffffff !important; 
+            text-decoration: underline;
+        }
 
-.full-copyright {
-    display: block;
-    margin-top: 15px;
-    font-size: 0.8rem;
-    color: #64748b !important; /* Slightly dimmer gray for the legal line */
-}
+        .full-copyright {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #64748b !important;
+        }
+
         .lang-btn { font-weight: bold; color: #fdbb2d !important; border: 1px solid #fdbb2d; border-radius: 5px; }
+
         @media (max-width: 991px) {
-    .navbar-nav { padding-top: 15px; }
-    .nav-item { margin-bottom: 10px; }
-    .lang-btn { display: inline-block; width: auto; }
-}
+            .navbar-nav { padding-top: 15px; text-align: center; }
+            .nav-item { margin-bottom: 10px; }
+            .lang-btn { display: inline-block; width: auto; }
+            /* Ensures buttons inside the menu don't stretch awkwardly */
+            .navbar-nav .btn { margin: 5px auto; width: 80%; }
+        }
     </style>
-   
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a href="/" class="logo-link">
+        <div class="container">
+            <a href="/" class="navbar-brand">
                 <img src="logo7.png" alt="PPM Digital Logo" class="nav-logo">
             </a>
 
-        <a class="navbar-brand fw-bold" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-center">
-               
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="./checkout.html">Payments</a></li> 
-                <a class="nav-link btn btn-success ms-lg-3 me-2" href="https://wa.me/16158668540" target="_blank" style="background-color: #25D366; border: none;">WhatsApp</a>
-                <li class="nav-item"><a class="nav-link btn btn-outline-light me-2" href="tel:6158668540">Call 615-866-8540</a></li>
-                <li class="nav-item"><a class="nav-link lang-btn px-3" href="espanol.html">Español</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./checkout.html">Payments</a></li> 
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success ms-lg-3 me-lg-2" href="https://wa.me/16158668540" target="_blank" style="background-color: #25D366; border: none; color: white;">WhatsApp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light me-lg-2" href="tel:6158668540">Call 615-866-8540</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link lang-btn px-3" href="espanol.html">Español</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <header class="hero text-center">
         <div class="container">
@@ -130,23 +139,24 @@ footer a:hover {
             </div>
         </div>
     </section>
-<footer>
-    <div class="container">
-        <p class="mb-0">
-            &copy; 2026 <strong>PPM Digital</strong> | 
-            <a href="privacy.html">Privacy</a> | 
-            <a href="terms.html">Terms</a> | 
-            <a href="contact.html">Contact</a> |
-            <a href="./checkout.html ">Payments</a>
-        </p>
-        <span class="full-copyright">
-            &copy; 2026 Prime Presence Marketing Digital (PPMDIGITAL) — All Rights Reserved.
-        </span>
-    </div>
-</footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+    <footer>
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 <strong>PPM Digital</strong> | 
+                <a href="privacy.html">Privacy</a> | 
+                <a href="terms.html">Terms</a> | 
+                <a href="contact.html">Contact</a> |
+                <a href="./checkout.html ">Payments</a>
+            </p>
+            <span class="full-copyright">
+                &copy; 2026 Prime Presence Marketing Digital (PPMDIGITAL) — All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
 
 
